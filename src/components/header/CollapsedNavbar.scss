@@ -1,0 +1,70 @@
+.overlay {
+  // height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+
+  .overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    text-transform: capitalize;
+    flex-direction: column;
+    a {
+      padding: 14px 0;
+      text-decoration: none;
+      font-size: 36px;
+      color: #000;
+      display: block;
+      cursor: pointer;
+    }
+    a:hover,
+    a:focus {
+      color: #aaa;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    99% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    width: 50px;
+    cursor: pointer;
+    background-color: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    height: 50px;
+    font-size: 45px;
+    animation: rotate 3s infinite 0s linear;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    a {
+      font-size: 20px;
+    }
+    .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+}
