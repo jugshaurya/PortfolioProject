@@ -1,0 +1,92 @@
+.personal-info {
+  background-color: #fff;
+  .photo-and-info {
+    height: 90vh;
+    width: 100vw;
+    background: url("../../assets/back2.jpg") no-repeat;
+    background-size: cover;
+    .container {
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+
+      .photo {
+        width: 50%;
+        height: 65%;
+        background: url("../../assets/new.png");
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 -4px -8px 10px rgba(0, 0, 0, 0.3),
+          inset 0 4px 8px 10px rgba(0, 0, 0, 0.3);
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .info {
+        width: 50%;
+        height: 65%;
+        box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        padding: 70px 20px 0 70px;
+        .info-details {
+          display: flex;
+          flex-direction: column;
+          height: 80%;
+          justify-content: center;
+          align-items: center;
+          .details {
+            width: 100%;
+            height: 24%;
+            padding: 10px;
+            text-align: left;
+            .name {
+              font-size: 1.4em;
+              line-height: 1.4em;
+              font-weight: bold;
+            }
+            .value {
+              font-size: 1.2em;
+              line-height: 1.2em;
+              margin-left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .social-links {
+    height: 10vh;
+    width: 100vw;
+    .container {
+      box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s;
+      color: #fff;
+      background-color: rgba(24, 33, 83, 1);
+      width: 70%;
+      margin: 0 auto;
+      height: 8vh;
+      line-height: 12vh;
+      .links {
+        width: 100%;
+        a svg {
+          width: 25px;
+          height: 25px;
+          margin-right: 25px;
+        }
+
+        .githubsvg {
+          background-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
