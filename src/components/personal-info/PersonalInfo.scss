@@ -18,7 +18,7 @@
         width: 50%;
         height: 65%;
         background: url("../../assets/new.png");
-        background-size: cover;
+        background-repeat: round;
         overflow: hidden;
         position: relative;
         box-shadow: 0 -4px -8px 10px rgba(0, 0, 0, 0.3),
@@ -41,6 +41,7 @@
           height: 80%;
           justify-content: center;
           align-items: center;
+
           .details {
             width: 100%;
             height: 24%;
@@ -68,7 +69,7 @@
     .container {
       box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
       transition: 0.3s;
-      color: #fff;
+      color: #182153;
       background-color: rgba(24, 33, 83, 1);
       width: 70%;
       margin: 0 auto;
@@ -86,6 +87,163 @@
           background-color: #fff;
           border-radius: 50%;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .personal-info .photo-and-info .container {
+    .info {
+      padding: 70px 20px 0 30px;
+    }
+    .photo {
+      background-repeat: round;
+    }
+  }
+}
+
+@media (max-width: 896px) {
+  .personal-info .photo-and-info .container {
+    .photo {
+      width: 100%;
+      height: 57%;
+      overflow: hidden;
+      background-repeat: space;
+      background-position-x: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .value {
+      font-size: 0.9em;
+      line-height: 0.9em;
+      margin-left: 0px;
+    }
+
+    .info {
+      height: 57%;
+      padding: 70px 20px 0 5px;
+      .info-details .details .name {
+        font-size: 1.1em;
+        line-height: 1.1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 688px) {
+  .personal-info {
+    .photo-and-info {
+      height: 120vh;
+      width: 100vw;
+      .container {
+        width: 80%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 30%;
+        // margin: 0 auto;
+
+        .photo {
+          width: 100%;
+          height: 45%;
+          overflow: hidden;
+          background-repeat: space;
+          background-position-x: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .info {
+          width: 100%;
+          height: 45%;
+          margin: 0 auto;
+          padding: 10px 10px 0 35px;
+          .info-details {
+            height: 100%;
+            .details {
+              color: #182153;
+              height: 23%;
+              padding-bottom: 10px;
+              .name {
+                font-size: 1.4em;
+                line-height: 1.4em;
+              }
+              .value {
+                font-size: 1.2em;
+                line-height: 1.2em;
+                margin-left: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-links {
+      .container {
+        width: 80%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 582px) {
+  .personal-info {
+    .photo-and-info {
+      height: 90vh;
+      .container {
+        width: 85%;
+        padding-top: 20%;
+        .photo {
+          width: 100%;
+          height: 45%;
+          overflow: hidden;
+          background-repeat: space;
+          background-position-x: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .info {
+          width: 100%;
+          height: 45%;
+          margin: 0 auto;
+          padding: 10px 10px 0 30px;
+          .info-details {
+            height: 100%;
+            .details {
+              color: #182153;
+              height: 23%;
+              padding-bottom: 10px;
+              .name {
+                font-size: 1.4em;
+                line-height: 1.4em;
+              }
+              .value {
+                font-size: 1.2em;
+                line-height: 1.2em;
+                margin-left: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-links {
+      .container {
+        width: 85%;
       }
     }
   }

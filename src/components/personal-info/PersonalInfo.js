@@ -43,7 +43,16 @@ class PersonalInfo extends Component {
                 {this.state.about.map(details => (
                   <p className="details">
                     <div className="name">{details.name}</div>
-                    <div className="value">{details.value}</div>
+                    {details.name === "Email:" ? (
+                      <a
+                        href={`mailto:${details.value}`}
+                        className="email value"
+                      >
+                        {details.value}
+                      </a>
+                    ) : (
+                      <div className="value">{details.value}</div>
+                    )}
                   </p>
                 ))}
               </div>
