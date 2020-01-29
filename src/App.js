@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./components/header/Header";
 import PersonalInfo from "./components/personal-info/PersonalInfo";
+import ExtraInfo from "./components/extrainfo/ExtraInfo";
+
 import "./App.scss";
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <PersonalInfo />
+      <ExtraInfo />
       {/* <Projects />
       <WorkStats />
       <Experience />

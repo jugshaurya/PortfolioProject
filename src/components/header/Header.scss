@@ -12,8 +12,10 @@ header {
   left: 0;
   z-index: 100;
   padding: 20px;
-  background-color: #fff;
-
+  background: #fff url("../../assets/chemistry.webp") repeat-x center center
+    fixed;
+  background-repeat: space;
+  background-size: left;
   .name {
     color: #182153;
     font-size: 1.6em;

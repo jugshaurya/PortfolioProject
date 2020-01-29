@@ -40,8 +40,8 @@ class PersonalInfo extends Component {
             <div className="photo"></div>
             <div className="info">
               <div className="info-details">
-                {this.state.about.map(details => (
-                  <p className="details">
+                {this.state.about.map((details, i) => (
+                  <div className="details" key={i}>
                     <div className="name">{details.name}</div>
                     {details.name === "Email:" ? (
                       <a
@@ -53,7 +53,7 @@ class PersonalInfo extends Component {
                     ) : (
                       <div className="value">{details.value}</div>
                     )}
-                  </p>
+                  </div>
                 ))}
               </div>
             </div>
