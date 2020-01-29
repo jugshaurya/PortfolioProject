@@ -1,12 +1,11 @@
 .extra-info {
   width: 100vw;
-  height: 60vh;
   .container {
     width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #182153;
-    padding: 40px 30px;
+    padding: 40px 30px 10px;
     h3 {
       font-weight: normal;
       height: 10%;
@@ -31,7 +30,7 @@
     }
 
     p.last {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
   }
 }
