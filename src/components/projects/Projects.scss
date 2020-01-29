@@ -10,8 +10,10 @@
     align-items: center;
     width: 100%;
     padding: 30px 30px;
-    background-color: #ddd;
+    background-color: #eee;
     font-size: xx-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .container {
@@ -22,6 +24,9 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 40px;
+    border-top: 3px solid black;
+
     .project-card {
       box-shadow: 5px 5px 5px #111;
       border: 3px solid #aaa;
