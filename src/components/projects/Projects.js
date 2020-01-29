@@ -83,7 +83,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projects-section">
+      <div className="projects-section" id="projects">
         <section>
           <h4>Projects</h4>
         </section>
@@ -96,13 +96,21 @@ class Projects extends Component {
               </div>
               <div className="code">
                 <span>code:</span>
-                <a href={project.code} target="_blank">
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {project.code}
                 </a>
               </div>
               <div className="website">
                 <span>Website:</span>
-                <a href={project.website} target="_blank">
+                <a
+                  href={project.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {project.website}
                 </a>
               </div>

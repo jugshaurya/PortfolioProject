@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Experience.scss";
 
 const Experience = () => {
   return (
-    <div className="experience-section">
+    <div className="experience-section" id="experience">
       <section>
         <h4>Experience</h4>
       </section>

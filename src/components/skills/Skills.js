@@ -78,7 +78,7 @@ class Skills extends Component {
 
   render() {
     return (
-      <div className="skills-section">
+      <div className="skills-section" id="skills">
         <section>
           <h4>Skills</h4>
         </section>

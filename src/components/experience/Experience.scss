@@ -1,10 +1,5 @@
 .experience-section {
-  padding-bottom: 80px;
-
-  * {
-    font-family: monospace;
-    word-break: keep-all;
-  }
+  padding-bottom: 100px;
 
   section {
     display: flex;
@@ -20,7 +15,9 @@
   }
 
   .container {
-    border-top: 3px solid black;
+    border-top: 10px solid black;
+    border-radius: 40px;
+
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -139,22 +136,8 @@
 @media (max-width: 726px) {
   .experience-section {
     .container {
-      width: 95%;
-
       .left {
-        padding-left: 20px;
-      }
-    }
-  }
-}
-
-@media (max-width: 622px) {
-  .experience-section {
-    .container {
-      width: 100%;
-
-      .left {
-        padding-left: 10px;
+        padding-left: 0px;
       }
     }
   }

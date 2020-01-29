@@ -34,7 +34,7 @@ class PersonalInfo extends Component {
 
   render() {
     return (
-      <div className="personal-info">
+      <div className="personal-info" id="about">
         <div className="photo-and-info">
           <div className="container">
             <div className="photo"></div>
@@ -62,16 +62,32 @@ class PersonalInfo extends Component {
         <div className="social-links">
           <div className="container">
             <div className="links">
-              <a href={this.state.githubLink} target="_blank">
+              <a
+                href={this.state.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GithubSvg className="githubsvg" />
               </a>
-              <a href={this.state.facebookLink} target="_blank">
+              <a
+                href={this.state.facebookLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FacebookSvg />
               </a>
-              <a href={this.state.twitterLink} target="_blank">
+              <a
+                href={this.state.twitterLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <TwitterSvg />
               </a>
-              <a href={this.state.linkedinLink} target="_blank">
+              <a
+                href={this.state.linkedinLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LinkedInSvg />
               </a>
             </div>

@@ -15,7 +15,7 @@
 
       .photo {
         width: 50%;
-        height: 65%;
+        height: 60%;
         background: url("../../assets/new.png");
         background-repeat: round;
         overflow: hidden;
@@ -30,10 +30,10 @@
       }
       .info {
         width: 50%;
-        height: 65%;
+        height: 60%;
         box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
         background: #fff;
-        padding: 70px 20px 0 70px;
+        padding: 70px 20px 0 40px;
         .info-details {
           display: flex;
           flex-direction: column;
@@ -44,17 +44,20 @@
           .details {
             width: 100%;
             height: 24%;
-            padding: 10px;
+            padding: 30px 30px 30px 20px;
             text-align: left;
             .name {
-              font-size: 1.4em;
+              font-size: xx-large;
               line-height: 1.4em;
               font-weight: bold;
             }
             .value {
-              font-size: 1.2em;
-              line-height: 1.2em;
+              font-size: larger;
               margin-left: 2px;
+              // color: purple;
+              &.email {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -91,11 +94,11 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1175px) {
   .personal-info .photo-and-info .container {
     width: 70%;
     .info {
-      padding: 70px 20px 0 30px;
+      padding: 70px 20px 0 20px;
     }
     .photo {
       background-repeat: round;
@@ -107,7 +110,7 @@
   }
 }
 
-@media (max-width: 896px) {
+@media (max-width: 935px) {
   .personal-info .photo-and-info .container {
     .photo {
       width: 100%;
@@ -121,24 +124,26 @@
         height: 100%;
       }
     }
-    .value {
-      font-size: 0.9em;
-      line-height: 0.9em;
-      margin-left: 0px;
-    }
 
     .info {
       height: 51%;
       padding: 70px 20px 0 5px;
-      .info-details .details .name {
-        font-size: 1.1em;
-        line-height: 1.1em;
+      .info-details .details {
+        .value {
+          font-size: larger;
+          margin-left: 2px;
+        }
+
+        .name {
+          font-size: 1.1em;
+          line-height: 1.1em;
+        }
       }
     }
   }
 }
 
-@media (max-width: 688px) {
+@media (max-width: 720px) {
   .personal-info {
     .photo-and-info {
       height: 120vh;

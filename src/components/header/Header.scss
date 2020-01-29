@@ -26,7 +26,7 @@ header {
     justify-content: center;
     font-weight: bold;
     a {
-      font-size: 0.8em;
+      font-size: 1.2em;
       text-decoration: none;
       text-transform: uppercase;
       color: black;
@@ -51,13 +51,13 @@ header {
     .navbar {
       a {
         padding: 0 5px;
-        font-size: 0.6em;
+        font-size: 1em;
       }
     }
   }
 }
 
-@media (max-width: 688px) {
+@media (max-width: 720px) {
   header {
     flex-direction: column;
     .navbar {
@@ -69,7 +69,7 @@ header {
   }
 }
 
-@media (max-width: 582px) {
+@media (max-width: 592px) {
   header {
     flex-direction: row;
     .navbar {
