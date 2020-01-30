@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: center;
     font-weight: bold;
+
     a {
       font-size: 1.2em;
       text-decoration: none;
@@ -33,7 +34,16 @@ header {
       padding: 0 10px;
       line-height: 2.5em;
       background: #eee;
+      border-radius: 25px;
       margin-right: 4px;
+      &.active {
+        background: saddlebrown;
+        transition: all 0.9s;
+
+        color: #fff;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0px;
+      }
     }
   }
 

@@ -9,7 +9,6 @@
   font-family: monospace;
   word-break: keep-all;
 }
-
 /* width */
 *::-webkit-scrollbar {
   width: 10px;

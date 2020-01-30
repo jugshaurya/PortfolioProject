@@ -54,7 +54,7 @@
             .value {
               font-size: larger;
               margin-left: 2px;
-              // color: purple;
+              font-family: Arial, Helvetica, sans-serif;
               &.email {
                 text-decoration: underline;
               }
@@ -68,8 +68,9 @@
   .social-links {
     height: 10vh;
     width: 100vw;
+
     .container {
-      box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       transition: 0.3s;
       color: #182153;
       background-color: rgba(24, 33, 83, 1);

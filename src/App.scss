@@ -38,3 +38,45 @@
     }
   }
 }
+
+// Offsetting the html anchors to adjust for fixed header/navbar
+// Thank you :- https://www.wikitechy.com/technology/css-offsetting-html-anchor-adjust-fixed-header/
+// #about:before,
+#workstats:before,
+#projects:before,
+#experience:before,
+#education:before,
+// #blogs:before,
+#skills:before {
+  display: block;
+  content: " ";
+  height: 75px;
+  visibility: hidden;
+}
+
+// link hover effect for `a.effect` tag
+a.effect {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  &:hover:before {
+    transition: all 0.3s;
+    transform: translateY(0%);
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+a.effect::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(139, 69, 19, 0.3);
+
+  content: "";
+  transform: translateY(95%);
+}
