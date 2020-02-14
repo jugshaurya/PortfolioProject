@@ -1,5 +1,5 @@
 .projects-section {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   section {
     display: flex;
     flex-direction: row;
@@ -41,8 +41,20 @@
         overflow: hidden;
         height: 250px;
         position: relative;
-        padding: 10px;
+        // padding-left: 10px;
         background-color: #aaa;
+        .under-construction {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          // border-radius: 25px;
+        }
         .name {
           position: absolute;
           bottom: 0;

@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "favicon-32x32.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "32x32"
     },
     {
-      "src": "logo512.png",
+      "src": "favicon-16x16.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "16x16"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#00e0ff",
   "background_color": "#ffffff"
 }

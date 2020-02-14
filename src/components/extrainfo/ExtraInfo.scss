@@ -65,6 +65,7 @@
       width: 80%;
       p.break-words {
         padding: 0;
+        font-size: large;
         margin-bottom: 50px;
       }
     }
@@ -74,7 +75,7 @@
 @media (max-width: 582px) {
   .extra-info {
     .container {
-      width: 85%;
+      width: 90%;
       p.break-words {
         padding: 0;
         margin-bottom: 40px;

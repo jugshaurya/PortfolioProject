@@ -14,11 +14,13 @@ header {
   padding: 20px;
   background: #fff url("../../assets/chemistry.webp") repeat-x center center
     fixed;
+
   background-repeat: space;
   background-size: left;
   .name {
     color: #182153;
     font-size: 1.6em;
+    font-weight: 500;
   }
 
   .navbar {
@@ -37,8 +39,8 @@ header {
       border-radius: 25px;
       margin-right: 4px;
       &.active {
-        background: saddlebrown;
-        transition: all 0.9s;
+        background: #182153;
+        transition: all 0.5s;
 
         color: #fff;
         border-bottom-left-radius: 0;
@@ -96,9 +98,18 @@ header {
       min-width: 40px;
       min-height: 40px;
       color: #fff;
-      background-color: rgba(24, 33, 83, 1);
-      border: solid 0px rgba(24, 33, 83, 1);
+      background-color: #278ea5;
+      // rgba(24, 33, 83, 1);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+      }
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

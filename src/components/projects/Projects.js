@@ -1,19 +1,23 @@
 import React, { Component } from "react";
 
 import "./Projects.scss";
-import projectImage from "../../assets/a.jpg";
+import underConstructionImage from "../../assets/under-construction.png";
+import trelloProjectImage from "../../assets/projectspic/trello.png";
+import weekdayProjectImage from "../../assets/projectspic/weekday.png";
+import closetGoodiesProjectImage from "../../assets/projectspic/closetGoodies.png";
+import otherImage from "../../assets/projectspic/a.jpg";
 class Projects extends Component {
   state = {
     projects: [
       {
-        photo: "../../assets/a.jpg",
+        photo: trelloProjectImage,
         name: "Trello Clone",
         code: "https://github.com/jugshaurya/trello-clone",
-        website: "https://github.com/later.sh",
+        website: "https://clone-trello.now.sh",
         techused: [
           "React.js + Redux",
-          "MongoDb",
-          "Node+Express",
+          "MongoDB + moongose",
+          "Node + Express",
           "Passport + bcrypt + jwt",
           "MDN Drag & Drop",
           "multer"
@@ -21,7 +25,7 @@ class Projects extends Component {
         started: "Dec 26, 2019"
       },
       {
-        photo: "../../assets/a.jpg",
+        photo: otherImage,
         name: "ChitChat(Discord Clone)",
         code: "https://github.com/jugshaurya/chit-chat",
         website: "https://github.com/later.sh",
@@ -35,48 +39,55 @@ class Projects extends Component {
         started: "Jan 7, 2020"
       },
       {
-        photo: "../../assets/a.jpg",
+        photo: weekdayProjectImage,
         name: "Productive Weekday",
         code: "https://github.com/jugshaurya/productive-weekday",
         website: "https://productive-weekday.netlify.com",
         techused: [
           "React.js + Redux",
-          "MongoDb",
-          "Node+Express",
+          "MongoDb + moongose",
+          "Node + Express",
           "d3.js(for racecar barchart)",
-          "Cherrio",
+          "Cheerio(webScraping)",
           "now.sh + netlify"
         ],
         started: "Jan 15, 2020"
       },
       {
-        photo: "../../assets/a.jpg",
-        name: "Cloth Zone",
-        code: "https://github.com/jugshaurya/cloth-zone",
-        website: "https://github.com/later.sh",
+        photo: closetGoodiesProjectImage,
+        name: "ClosetGoodies",
+        code: "https://github.com/jugshaurya/closetgoodies",
+        website: "https://closet-goodies.firebaseapp.com",
         techused: [
           "React.js + Redux",
           "Redux Thunk",
           "Firebase Auth",
-          "Firebase Firestore"
+          "Firebase Firestore",
+          "Firebase Hosting"
         ],
         started: "Oct 23, 2019"
       },
       {
-        photo: "../../assets/a.jpg",
+        photo: otherImage,
         name: "Url Shortner",
         code: "https://github.com/jugshaurya/urlShortner",
         website: "https://little.now.sh",
-        techused: ["Vanilla JS", "MongoDb", "Node+Express", "now.sh"],
+        techused: [
+          "Vanilla JS",
+          "MongoDb + moongose",
+          "Node + Express",
+          "now.sh"
+        ],
         started: "Aug 30, 2019"
       },
       {
-        photo: "../../assets/a.jpg",
-        name: "Mario Bros Lvl1",
+        photo: otherImage,
+        name: "Mario Bros Lvl 1",
         code: "https://github.com/jugshaurya/mario",
         website: "https://github.com/later.sh",
         techused: ["ES6 Javascript", "Phaser V3", "Babel", "Webpack"],
-        started: "Aug 10, 2019"
+        started: "Aug 10, 2019",
+        notCompleted: true
       }
     ]
   };
@@ -91,7 +102,15 @@ class Projects extends Component {
           {this.state.projects.map((project, i) => (
             <div className="project-card" key={100 + i}>
               <div className="pic">
-                <img src={projectImage} alt="projectpic" />
+                {project.notCompleted && (
+                  <div className="under-construction">
+                    <img
+                      src={underConstructionImage}
+                      alt="underconstructionpic"
+                    />
+                  </div>
+                )}
+                <img src={project.photo} alt="projectpic" />
                 <div className="name">{project.name}</div>
               </div>
               <div className="code">
@@ -128,7 +147,13 @@ class Projects extends Component {
                   {project.started}
                 </div>
                 <div className="visit">
-                  <a href={project.website}>Visit</a>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
                 </div>
               </div>
             </div>

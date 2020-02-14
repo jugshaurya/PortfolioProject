@@ -1,19 +1,12 @@
 import React from "react";
 import CollapsedNavbar from "./CollapseNavbar";
 import "./Header.scss";
-
 class Header extends React.Component {
   state = {
     isCollapsedNavOpen: false,
     height: 0,
     activeLink: "about"
   };
-
-  componentDidMount() {
-    if (2 === 2) {
-      throw new Error("sad");
-    }
-  }
 
   showNavbar = val => {
     const obj = {
@@ -30,7 +23,9 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <div className="name">Shaurya Singhal</div>
+        <div className="parent-name">
+          <div className="name">Shaurya Singhal</div>
+        </div>
         <div className="navbar">
           <a
             href="#about"

@@ -20,6 +20,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
+  border-radius: 25px;
   background: #253486;
 }
 
