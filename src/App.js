@@ -10,27 +10,30 @@ import Education from "./components/education/Education";
 import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
 
+import ErrorBoundary from "./components/ErrorBoundary";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <PersonalInfo />
-      <ExtraInfo />
-      <WorkStats />
-      <Projects />
-      <Experience />
-      <Education />
-      <Skills />
-      {/*
+    <ErrorBoundary>
+      <div className="App">
+        <Header />
+        <PersonalInfo />
+        <ExtraInfo />
+        <WorkStats />
+        <Projects />
+        <Experience />
+        <Education />
+        <Skills />
+        {/*
       <Blogs />
-      */}
-      <Footer />
-      <a href="#about" className="bottom-right-float">
-        &uarr;
-      </a>
-    </div>
+    */}
+        <Footer />
+        <a href="#about" className="bottom-right-float">
+          &uarr;
+        </a>
+      </div>
+    </ErrorBoundary>
   );
 }
 

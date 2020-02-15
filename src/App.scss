@@ -16,6 +16,7 @@
     color: #fff;
     height: 60px;
     width: 60px;
+    z-index: 20;
     box-shadow: 3px 3px 3px #666;
     cursor: pointer;
     text-decoration: none;
@@ -36,5 +37,83 @@
       transform: translateY(0px);
       box-shadow: 0px 0px 0px #182153;
     }
+  }
+}
+
+// Offsetting the html anchors to adjust for fixed header/navbar
+// Thank you :- https://www.wikitechy.com/technology/css-offsetting-html-anchor-adjust-fixed-header/
+// #about:before,
+#workstats:before,
+#projects:before,
+#experience:before,
+#education:before,
+// #blogs:before,
+#skills:before {
+  display: block;
+  content: " ";
+  height: 75px;
+  visibility: hidden;
+}
+
+// link hover effect for `a.effect` tag
+a.effect {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  &:hover:before {
+    transition: all 0.3s;
+    transform: translateY(0%);
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+a.effect::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(139, 69, 19, 0.3);
+
+  content: "";
+  transform: translateY(95%);
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  #workstats:before,
+  #projects:before,
+  #experience:before,
+  #education:before,
+  // #blogs:before,
+  #skills:before {
+    height: 85px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #workstats:before,
+  #projects:before,
+  #experience:before,
+  #education:before,
+  // #blogs:before,
+  #skills:before {
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  #workstats:before,
+  #projects:before,
+  #experience:before,
+  #education:before,
+  // #blogs:before,
+  #skills:before {
+    display: block;
+    content: " ";
+    height: 125px;
+    visibility: hidden;
   }
 }

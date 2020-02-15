@@ -46,7 +46,7 @@ class PersonalInfo extends Component {
                     {details.name === "Email:" ? (
                       <a
                         href={`mailto:${details.value}`}
-                        className="email value"
+                        className="email value effect"
                       >
                         {details.value}
                       </a>
