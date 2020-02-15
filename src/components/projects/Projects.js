@@ -13,7 +13,7 @@ class Projects extends Component {
         photo: trelloProjectImage,
         name: "Trello Clone",
         code: "https://github.com/jugshaurya/trello-clone",
-        website: "https://clone-trello.now.sh",
+        website: "https://trello-clone.jugshaurya.now.sh",
         techused: [
           "React.js + Redux",
           "MongoDB + moongose",
