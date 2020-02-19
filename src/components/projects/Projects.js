@@ -5,7 +5,10 @@ import underConstructionImage from "../../assets/under-construction.png";
 import trelloProjectImage from "../../assets/projectspic/trello.png";
 import weekdayProjectImage from "../../assets/projectspic/weekday.png";
 import closetGoodiesProjectImage from "../../assets/projectspic/closetGoodies.png";
+import marioProjectImage from "../../assets/projectspic/mario.png";
+import littleProjectImage from "../../assets/projectspic/little.png";
 import otherImage from "../../assets/projectspic/a.jpg";
+
 class Projects extends Component {
   state = {
     projects: [
@@ -36,7 +39,8 @@ class Projects extends Component {
           "Firebase Storage",
           "sass"
         ],
-        started: "Jan 7, 2020"
+        started: "Jan 7, 2020",
+        notCompleted: true
       },
       {
         photo: weekdayProjectImage,
@@ -68,7 +72,7 @@ class Projects extends Component {
         started: "Oct 23, 2019"
       },
       {
-        photo: otherImage,
+        photo: littleProjectImage,
         name: "Url Shortner",
         code: "https://github.com/jugshaurya/urlShortner",
         website: "https://little.now.sh",
@@ -76,16 +80,17 @@ class Projects extends Component {
           "Vanilla JS",
           "MongoDb + moongose",
           "Node + Express",
+          "handlebars",
           "now.sh"
         ],
         started: "Aug 30, 2019"
       },
       {
-        photo: otherImage,
+        photo: marioProjectImage,
         name: "Mario Bros Lvl 1",
         code: "https://github.com/jugshaurya/mario",
-        website: "https://github.com/later.sh",
-        techused: ["ES6 Javascript", "Phaser V3", "Babel", "Webpack"],
+        website: "https://shamario.netlify.com",
+        techused: ["Javascript", "Phaser V3", "Babel + Webpack"],
         started: "Aug 10, 2019",
         notCompleted: true
       }

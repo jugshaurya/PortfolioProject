@@ -6,6 +6,7 @@ somethings are written in https://github.com/jugshaurya/profile, have a look.
 ### Deployment
 
 ```
+yarn build 
 now
 now alias https://portfolio.jugshaurya.now.sh shaurya.now.sh
 ```

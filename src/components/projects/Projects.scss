@@ -29,7 +29,7 @@
       box-shadow: 5px 6px 10px #555;
 
       border: 3px solid #aaa;
-      width: 296px;
+      width: 297px;
       position: relative;
       border-radius: 25px;
       text-align: left;
@@ -149,6 +149,9 @@
   .projects-section {
     .container {
       width: 90%;
+      .project-card {
+        width: 267px;
+      }
     }
   }
 }
