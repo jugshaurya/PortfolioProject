@@ -22,10 +22,11 @@ const WorkStats = () => {
       </section>
       <div className="container">
         <figure>
-          <embed src="https://wakatime.com/share/@jugshaurya/d2bef6d8-2a0f-4d13-9d51-034ce2f08d8f.svg"></embed>
+          <embed src="https://wakatime.com/share/@jugshaurya/9ca5accf-4aa5-41ca-917e-5a143e9552ee.svg"></embed>
         </figure>
+
         <figure>
-          <embed src="https://wakatime.com/share/@jugshaurya/f4c4855e-40ed-46ec-83be-b06c18f6a37b.svg"></embed>
+          <embed src="https://wakatime.com/share/@jugshaurya/a750f08f-2404-4f77-8df8-849d0a8f4109.svg"></embed>
         </figure>
         <div className="contrib-svg">
           <h6 className="github-heading">Github Contrib</h6>

@@ -6,16 +6,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #222;
     width: 100%;
     padding: 30px 30px;
     font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: 2px;
+    h4 {
+      color: mediumaquamarine;
+    }
   }
 
   .container {
-    border-top: 10px solid black;
+    border-top: 10px solid mediumaquamarine;
+    background: linear-gradient(180deg, rgba(102, 205, 170, 0.1), #222 30px);
+
     border-radius: 40px;
     width: 70%;
     margin: 0 auto;
@@ -28,6 +33,13 @@
     figure {
       width: 46%;
       margin: 2%;
+      transition: all 0.8s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      rect {
+        background: #fff;
+      }
     }
 
     .contrib-svg {
@@ -38,10 +50,22 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      transition: all 0.8s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+
       .github-heading {
         font-size: large;
-        margin: 10px 0;
-        color: #1f77b4;
+        margin: 15px 0;
+        color: darkgoldenrod;
+      }
+      svg {
+        background: #fff;
+        text {
+          fill: darkblue;
+          font-weight: 800;
+        }
       }
     }
   }

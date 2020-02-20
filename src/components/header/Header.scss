@@ -1,7 +1,7 @@
 /* Header.js */
 
 header {
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid lightskyblue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -12,15 +12,17 @@ header {
   left: 0;
   z-index: 100;
   padding: 20px;
-  background: #fff url("../../assets/chemistry.webp") repeat-x center center
-    fixed;
+  // background: #fff url("../../assets/chemistry.webp") repeat-x center center
+  background: #222;
+  background: linear-gradient(0deg, rgba(135, 206, 250, 0.1), #222 10px);
 
   background-repeat: space;
   background-size: left;
   .name {
-    color: #182153;
+    color: #fff;
     font-size: 1.6em;
     font-weight: 500;
+    color: mediumaquamarine;
   }
 
   .navbar {
@@ -32,17 +34,16 @@ header {
       font-size: 1.2em;
       text-decoration: none;
       text-transform: uppercase;
-      color: black;
+      color: lightskyblue;
       padding: 0 10px;
       line-height: 2.5em;
-      background: #eee;
+      background: rgba(107, 205, 170, 0.08);
       border-radius: 25px;
       margin-right: 4px;
       &.active {
-        background: #182153;
+        background: lightskyblue;
         transition: all 0.5s;
-
-        color: #fff;
+        color: #222;
         border-bottom-left-radius: 0;
         border-top-right-radius: 0px;
       }
@@ -97,8 +98,8 @@ header {
       line-height: 1.8em;
       min-width: 40px;
       min-height: 40px;
-      color: #fff;
-      background-color: #278ea5;
+      color: #222;
+      background-color: lightskyblue;
       // rgba(24, 33, 83, 1);
       box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
         0 15px 12px rgba(0, 0, 0, 0.22);
