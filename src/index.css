@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  color: #182153;
+  color: #fff;
 
   font-family: monospace;
   word-break: keep-all;
@@ -21,11 +21,13 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 25px;
-  background: #253486;
+  background: lightskyblue;
+  border: 2px solid mediumaquamarine;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: #1236ff;
+  background: mediumaquamarine;
+  border: 2px solid lightskyblue;
 }
 
 body {

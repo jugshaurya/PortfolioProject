@@ -5,7 +5,7 @@
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: #222;
   overflow-x: hidden;
   transition: 0.3s;
 
@@ -22,22 +22,13 @@
       padding: 14px 0;
       text-decoration: none;
       font-size: 36px;
-      color: #000;
+      color: lightskyblue;
       display: block;
       cursor: pointer;
     }
     a:hover,
     a:focus {
-      color: #aaa;
-    }
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
+      color: mediumaquamarine;
     }
   }
 
@@ -47,12 +38,20 @@
     right: 45px;
     width: 50px;
     cursor: pointer;
-    background-color: #aaa;
     border-radius: 50%;
     text-align: center;
     height: 50px;
     font-size: 45px;
     animation: rotate 3s infinite 0s linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 

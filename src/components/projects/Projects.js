@@ -27,21 +27,21 @@ class Projects extends Component {
         ],
         started: "Dec 26, 2019"
       },
-      {
-        photo: otherImage,
-        name: "ChitChat(Discord Clone)",
-        code: "https://github.com/jugshaurya/chit-chat",
-        website: "https://github.com/later.sh",
-        techused: [
-          "React.js + Redux",
-          "Firebase Auth",
-          "Firebase RealtimeDatabase",
-          "Firebase Storage",
-          "sass"
-        ],
-        started: "Jan 7, 2020",
-        notCompleted: true
-      },
+      // {
+      //   photo: otherImage,
+      //   name: "ChitChat(Discord Clone)",
+      //   code: "https://github.com/jugshaurya/chit-chat",
+      //   website: "https://github.com/later.sh",
+      //   techused: [
+      //     "React.js + Redux",
+      //     "Firebase Auth",
+      //     "Firebase RealtimeDatabase",
+      //     "Firebase Storage",
+      //     "sass"
+      //   ],
+      //   started: "Jan 7, 2020",
+      //   notCompleted: true
+      // },
       {
         photo: weekdayProjectImage,
         name: "Productive Weekday",
@@ -119,7 +119,7 @@ class Projects extends Component {
                 <div className="name">{project.name}</div>
               </div>
               <div className="code">
-                <span>code:</span>
+                <span>code: </span>
                 <a
                   href={project.code}
                   target="_blank"
@@ -129,7 +129,7 @@ class Projects extends Component {
                 </a>
               </div>
               <div className="website">
-                <span>Website:</span>
+                <span>Website: </span>
                 <a
                   href={project.website}
                   target="_blank"

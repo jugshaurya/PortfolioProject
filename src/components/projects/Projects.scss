@@ -7,10 +7,13 @@
     align-items: center;
     width: 100%;
     padding: 30px 30px;
-    background-color: #eee;
+    background-color: #222;
     font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: 2px;
+    h4 {
+      color: lightskyblue;
+    }
   }
 
   .container {
@@ -21,27 +24,32 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 40px;
-    border-top: 10px solid black;
+    padding-top: 60px;
+    border-top: 10px solid lightskyblue;
+    background: linear-gradient(180deg, rgba(135, 206, 250, 0.1), #222 30px);
+
     border-radius: 40px;
 
     .project-card {
-      box-shadow: 5px 6px 10px #555;
-
-      border: 3px solid #aaa;
-      width: 297px;
+      box-shadow: 3px 10px 10px #555;
+      border: 8px solid #ddd;
+      width: 290px;
       position: relative;
       border-radius: 25px;
       text-align: left;
       overflow: hidden;
       margin-right: 40px;
       margin-bottom: 40px;
+      transition: all 0.8s;
+      background: #333;
+      &:hover {
+        transform: translateY(-10px);
+      }
       .pic {
         width: 100%;
         overflow: hidden;
         height: 250px;
         position: relative;
-        // padding-left: 10px;
         background-color: #aaa;
         .under-construction {
           width: 100px;
@@ -53,18 +61,20 @@
         img {
           width: 100%;
           height: 100%;
-          // border-radius: 25px;
         }
         .name {
           position: absolute;
           bottom: 0;
           left: 0;
           padding: 10px;
-          background: palevioletred;
+          background: #36b5cd;
           font-weight: 600;
           border-radius: 25px;
           border-bottom-left-radius: 0px;
           border-top-right-radius: 0px;
+          color: #222;
+
+          font-weight: bold;
         }
       }
 
@@ -72,14 +82,14 @@
       .website {
         padding: 10px;
         a {
-          color: #36b5cd;
+          color: #ddd;
           font-weight: bolder;
           word-break: break-all;
         }
 
         span {
           text-transform: capitalize;
-          color: #182153;
+          color: lightskyblue;
           font-weight: 600;
         }
       }
@@ -91,8 +101,10 @@
           display: block;
           padding: 2px;
           font-size: 1.1em;
+          color: #eee;
         }
         span {
+          color: #36b5cd;
           display: block;
           font-weight: 600;
         }
@@ -108,7 +120,7 @@
           display: flex;
           flex-direction: column;
           font-size: larger;
-          color: #36b5cd;
+          color: lightskyblue;
           font-weight: bolder;
 
           span {
@@ -117,11 +129,20 @@
         }
         .visit {
           padding: 10px 20px;
-          background-color: #182153;
           border-radius: 25px;
+          border: 2px solid mediumaquamarine;
+          cursor: move;
+          transition: all 0.8s;
+          &:hover {
+            background: lightblue;
+            transform: rotate(5deg);
+            a {
+              color: #222;
+            }
+          }
           a {
             text-decoration: none;
-            color: #fff;
+            color: mediumaquamarine;
           }
         }
       }
