@@ -1,21 +1,26 @@
 .experience-section {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
   section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #222;
     width: 100%;
     padding: 30px 30px;
     font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: 2px;
+    h4 {
+      color: mediumaquamarine;
+    }
   }
 
   .container {
-    border-top: 10px solid black;
+    border-top: 10px solid mediumaquamarine;
+    background: linear-gradient(180deg, rgba(102, 205, 170, 0.1), #222 30px);
+
     border-radius: 40px;
 
     width: 70%;
@@ -36,7 +41,7 @@
         content: "";
         width: 4px;
         height: 145px;
-        background-color: #111;
+        background-color: mediumaquamarine;
         position: absolute;
         top: 60px;
         right: 0;
@@ -48,7 +53,7 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background-color: saddlebrown;
+        background-color: lightskyblue;
         position: absolute;
         top: 80px;
         z-index: 2;
@@ -56,13 +61,11 @@
       }
 
       .date {
-        color: saddlebrown;
         span {
           font-weight: 600;
           display: block;
           font-size: 1.5em;
-
-          color: #182153;
+          color: lightskyblue;
         }
       }
 
@@ -87,8 +90,9 @@
       .place {
         font-weight: 600;
         font-size: 1.5em;
+        color: lightskyblue;
         span {
-          color: saddlebrown;
+          color: mediumaquamarine;
         }
       }
 

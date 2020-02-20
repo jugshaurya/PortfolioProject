@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background: url("./assets/chemistry.webp") repeat 0 0 fixed;
+  // background: #222 url("./assets/chemistry.webp") repeat 0 0 fixed;
+  background: #222;
   width: 100%;
   height: auto;
 
@@ -10,10 +11,10 @@
     font-size: 3rem;
     font-weight: bolder;
     right: 30px;
-    border: 4px solid #aaa;
+    border: 4px solid mediumaquamarine;
     border-radius: 50%;
-    background: #182153;
-    color: #fff;
+    background: #222;
+    color: lightskyblue;
     height: 60px;
     width: 60px;
     z-index: 20;
@@ -27,15 +28,16 @@
   @keyframes floattopbtn {
     0% {
       transform: translateY(1px);
-      box-shadow: 10px 10px 10px rgba(24, 33, 83, 0.5),
-        -10px -10px 10px rgba(24, 33, 83, 0.5),
-        0px -10px 10px rgba(24, 33, 83, 0.5),
-        -10px 0px 10px rgba(24, 33, 83, 0.5),
-        0px 10px 10px rgba(24, 33, 83, 0.5), 10px 0px 10px rgba(24, 33, 83, 0.5);
+      box-shadow: 6px 6px 6px rgba(135, 206, 250, 0.5),
+        -6px -6px 6px rgba(135, 206, 250, 0.5),
+        0px -6px 6px rgba(135, 206, 250, 0.5),
+        -6px 0px 6px rgba(135, 206, 250, 0.5),
+        0px 6px 6px rgba(135, 206, 250, 0.5),
+        6px 0px 6px rgba(135, 206, 250, 0.5);
     }
     100% {
       transform: translateY(0px);
-      box-shadow: 0px 0px 0px #182153;
+      box-shadow: 0px 0px 0px #fff;
     }
   }
 }

@@ -1,21 +1,24 @@
 .skills-section {
-  background: rgba(24, 33, 83, 0.1);
+  background: #222;
 
   section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #222;
     width: 100%;
     padding: 30px 30px;
     font-size: xx-large;
     text-transform: uppercase;
     letter-spacing: 2px;
+    h4 {
+      color: mediumaquamarine;
+    }
   }
 
   .container {
-    border-top: 10px solid black;
+    border-top: 10px solid mediumaquamarine;
     border-radius: 40px;
 
     width: 70%;
@@ -25,23 +28,25 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 40px 20px;
+    background: linear-gradient(180deg, rgba(102, 205, 170, 0.1), #222 30px);
 
     .skill {
-      background-color: transparent;
       padding: 20px 1.5%;
       margin: 2%;
       width: 21%;
       box-shadow: 5px 6px 10px #555;
-
       border: 5px solid #aaa;
-
+      transition: all 0.5s;
+      &:hover {
+        transform: rotate(5deg);
+      }
       .name {
         font-size: x-large;
-        color: #182153;
+        color: #ddd;
         font-weight: 500;
       }
       .level {
-        color: saddlebrown;
+        color: lightskyblue;
       }
     }
   }
