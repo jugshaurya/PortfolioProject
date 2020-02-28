@@ -38,6 +38,8 @@
       border-left: 6px solid lightskyblue;
       border-radius: 10px;
       transition: all 0.5s;
+      background: url("../../assets/j.png") no-repeat center center fixed;
+      opacity: 0.8;
       &:hover {
         transform: rotate(5deg);
       }

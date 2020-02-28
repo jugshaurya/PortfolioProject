@@ -43,6 +43,10 @@
       margin-bottom: 40px;
       transition: all 0.8s;
       background: #333;
+      // background: transparent;
+      background: url("../../assets/j.png") no-repeat center center fixed;
+      // background-color: #000000;
+      // background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
       &:hover {
         transform: translateY(-10px);
       }
@@ -132,7 +136,7 @@
           padding: 10px 20px;
           border-radius: 25px;
           border: 2px solid mediumaquamarine;
-          cursor: move;
+          cursor: pointer;
           transition: all 0.8s;
           &:hover {
             background: lightblue;
