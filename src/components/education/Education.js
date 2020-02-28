@@ -24,7 +24,7 @@ const Education = () => {
           <div className="task-list">
             <div className="heading">CGPA -</div>
             <ul className="list">
-              <li>8.55</li>
+              <li>8.554</li>
             </ul>
           </div>
         </div>

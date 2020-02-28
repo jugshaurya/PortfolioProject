@@ -37,7 +37,7 @@ class Projects extends Component {
       //     "Firebase Auth",
       //     "Firebase RealtimeDatabase",
       //     "Firebase Storage",
-      //     "sass"
+      //     "Sass"
       //   ],
       //   started: "Jan 7, 2020",
       //   notCompleted: true
@@ -73,8 +73,8 @@ class Projects extends Component {
       },
       {
         photo: littleProjectImage,
-        name: "Url Shortner",
-        code: "https://github.com/jugshaurya/urlShortner",
+        name: "Url Shortener",
+        code: "https://github.com/jugshaurya/shortener",
         website: "https://little.now.sh",
         techused: [
           "Vanilla JS",
