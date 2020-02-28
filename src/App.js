@@ -23,8 +23,8 @@ function App() {
         <WorkStats />
         <Projects />
         <Experience />
-        <Education />
         <Skills />
+        <Education />
         {/*
       <Blogs />
     */}

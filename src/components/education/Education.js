@@ -14,7 +14,7 @@ const Education = () => {
           </div>
           <div className="occupation">
             <span> Bachelor's Degree </span>
-            <span> (H) Computer Science </span>
+            <span> B.Sc (H) Computer Science </span>
           </div>
         </div>
         <div className="right">

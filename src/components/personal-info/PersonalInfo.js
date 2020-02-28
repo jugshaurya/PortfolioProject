@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import { ReactComponent as GithubSvg } from "../../assets/github.svg";
-import { ReactComponent as FacebookSvg } from "../../assets/facebook.svg";
+// import { ReactComponent as FacebookSvg } from "../../assets/facebook.svg";
 import { ReactComponent as TwitterSvg } from "../../assets/twitter.svg";
 import { ReactComponent as LinkedInSvg } from "../../assets/linkedin.svg";
 import "./PersonalInfo.scss";
@@ -69,13 +69,13 @@ class PersonalInfo extends Component {
               >
                 <GithubSvg className="githubsvg" />
               </a>
-              <a
+              {/* <a
                 href={this.state.facebookLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FacebookSvg />
-              </a>
+              </a> */}
               <a
                 href={this.state.twitterLink}
                 target="_blank"

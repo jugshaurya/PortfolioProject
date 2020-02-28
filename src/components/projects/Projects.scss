@@ -24,15 +24,16 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-    padding-top: 60px;
+    padding-top: 100px;
     border-top: 10px solid lightskyblue;
     background: linear-gradient(180deg, rgba(135, 206, 250, 0.1), #222 30px);
 
     border-radius: 40px;
 
     .project-card {
-      box-shadow: 3px 10px 10px #555;
-      border: 8px solid #ddd;
+      box-shadow: 3px 5px 4px #555555;
+      border-bottom: 8px solid lightskyblue;
+      // border-top: 8px solid lightskyblue;
       width: 290px;
       position: relative;
       border-radius: 25px;

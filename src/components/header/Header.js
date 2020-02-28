@@ -56,18 +56,18 @@ class Header extends React.Component {
             Experience
           </a>
           <a
-            href="#education"
-            className={this.state.activeLink === "education" ? "active" : ""}
-            onClick={() => this.handleActiveLink("education")}
-          >
-            Education
-          </a>
-          <a
             href="#skills"
             className={this.state.activeLink === "skills" ? "active" : ""}
             onClick={() => this.handleActiveLink("skills")}
           >
             Skills
+          </a>
+          <a
+            href="#education"
+            className={this.state.activeLink === "education" ? "active" : ""}
+            onClick={() => this.handleActiveLink("education")}
+          >
+            Education
           </a>
           {/* <a
             to="#blogs"

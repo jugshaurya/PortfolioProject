@@ -49,7 +49,7 @@ class Projects extends Component {
         website: "https://productive-weekday.netlify.com",
         techused: [
           "React.js + Redux",
-          "MongoDb + moongose",
+          "MongoDB + moongose",
           "Node + Express",
           "d3.js(for racecar barchart)",
           "Cheerio(webScraping)",
@@ -78,7 +78,7 @@ class Projects extends Component {
         website: "https://little.now.sh",
         techused: [
           "Vanilla JS",
-          "MongoDb + moongose",
+          "MongoDB",
           "Node + Express",
           "handlebars",
           "now.sh"

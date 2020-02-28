@@ -11,7 +11,7 @@
 }
 /* width */
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 
 /* Track */
@@ -21,13 +21,17 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 25px;
+  background: mediumaquamarine;
+  border: 2px solid lightskyblue;
+}
+
+*::-webkit-scrollbar-thumb:hover {
   background: lightskyblue;
   border: 2px solid mediumaquamarine;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: mediumaquamarine;
-  border: 2px solid lightskyblue;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
