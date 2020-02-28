@@ -14,7 +14,8 @@ header {
   padding: 20px;
   // background: #fff url("../../assets/chemistry.webp") repeat-x center center
   background: #222;
-  background: linear-gradient(0deg, rgba(135, 206, 250, 0.1), #222 10px);
+  // background: transparent;
+  // background: linear-gradient(0deg, rgba(135, 206, 250, 0.1), #222 10px);
 
   background-repeat: space;
   background-size: left;
@@ -34,14 +35,13 @@ header {
       font-size: 1.2em;
       text-decoration: none;
       text-transform: uppercase;
-      color: lightskyblue;
       padding: 0 10px;
       line-height: 2.5em;
-      background: rgba(107, 205, 170, 0.08);
       border-radius: 25px;
       margin-right: 4px;
       &.active {
-        background: lightskyblue;
+        // background: lightskyblue;
+        background: url("../../assets/k.png") no-repeat center center fixed;
         transition: all 0.5s;
         color: #222;
         border-bottom-left-radius: 0;

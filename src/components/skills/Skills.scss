@@ -18,7 +18,7 @@
   }
 
   .container {
-    border-top: 10px solid mediumaquamarine;
+    border-top: 10px solid lightskyblue;
     border-radius: 40px;
 
     width: 70%;
@@ -35,8 +35,11 @@
       margin: 2%;
       width: 21%;
       box-shadow: 5px 6px 10px #555;
-      border: 5px solid #aaa;
+      border-left: 6px solid lightskyblue;
+      border-radius: 10px;
       transition: all 0.5s;
+      background: url("../../assets/j.png") no-repeat center center fixed;
+      opacity: 0.8;
       &:hover {
         transform: rotate(5deg);
       }

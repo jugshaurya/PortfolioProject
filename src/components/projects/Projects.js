@@ -16,7 +16,7 @@ class Projects extends Component {
         photo: trelloProjectImage,
         name: "Trello Clone",
         code: "https://github.com/jugshaurya/trello-clone",
-        website: "https://trello-clone.jugshaurya.now.sh",
+        website: "https://clone-trello.now.sh",
         techused: [
           "React.js + Redux",
           "MongoDB + moongose",
@@ -37,7 +37,7 @@ class Projects extends Component {
       //     "Firebase Auth",
       //     "Firebase RealtimeDatabase",
       //     "Firebase Storage",
-      //     "sass"
+      //     "Sass"
       //   ],
       //   started: "Jan 7, 2020",
       //   notCompleted: true
@@ -49,7 +49,7 @@ class Projects extends Component {
         website: "https://productive-weekday.netlify.com",
         techused: [
           "React.js + Redux",
-          "MongoDb + moongose",
+          "MongoDB + moongose",
           "Node + Express",
           "d3.js(for racecar barchart)",
           "Cheerio(webScraping)",
@@ -73,12 +73,12 @@ class Projects extends Component {
       },
       {
         photo: littleProjectImage,
-        name: "Url Shortner",
-        code: "https://github.com/jugshaurya/urlShortner",
+        name: "Url Shortener",
+        code: "https://github.com/jugshaurya/shortener",
         website: "https://little.now.sh",
         techused: [
           "Vanilla JS",
-          "MongoDb + moongose",
+          "MongoDB",
           "Node + Express",
           "handlebars",
           "now.sh"

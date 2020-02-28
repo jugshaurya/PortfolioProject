@@ -42,7 +42,7 @@ class Skills extends Component {
         level: "Intermediate"
       },
       {
-        name: "MongoDb",
+        name: "MongoDB",
         level: "Intermediate"
       },
       {

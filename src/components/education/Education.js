@@ -14,7 +14,7 @@ const Education = () => {
           </div>
           <div className="occupation">
             <span> Bachelor's Degree </span>
-            <span> (H) Computer Science </span>
+            <span> B.Sc (H) Computer Science </span>
           </div>
         </div>
         <div className="right">
@@ -24,7 +24,7 @@ const Education = () => {
           <div className="task-list">
             <div className="heading">CGPA -</div>
             <ul className="list">
-              <li>8.55</li>
+              <li>8.554</li>
             </ul>
           </div>
         </div>

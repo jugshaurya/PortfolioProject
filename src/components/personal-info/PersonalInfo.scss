@@ -25,11 +25,11 @@
         overflow: hidden;
         position: relative;
 
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-          0 15px 12px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 0px 38px rgba(0, 0, 0, 0.3),
+          0 0px 12px rgba(0, 0, 0, 0.22);
         &:hover {
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25),
+            0 0px 10px rgba(0, 0, 0, 0.22);
         }
         border-radius: 25px;
         border-top-right-radius: 0;
@@ -45,17 +45,19 @@
         width: 50%;
         height: 60%;
         box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.3);
-        background: #222;
+        // background: #222;
+        background: url("../../assets/j.png") no-repeat center center fixed;
+
         // padding: 70px 20px 0 40px;
         display: flex;
         align-items: center;
         padding-left: 40px;
 
-        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-          0 15px 12px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 0px 38px rgba(0, 0, 0, 0.3),
+          0 0px 12px rgba(0, 0, 0, 0.22);
         &:hover {
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 0px 28px rgba(0, 0, 0, 0.25),
+            0 0px 10px rgba(0, 0, 0, 0.22);
         }
         border-radius: 25px;
         border-top-left-radius: 0;
@@ -102,9 +104,9 @@
     .container {
       transition: 0.3s;
       color: #fff;
-      // background-color: rgba(24, 33, 83, 1);
-      // background-color: darkturquoise;
-      background-color: lightskyblue;
+      // background-color: lightskyblue;
+      background: url("../../assets/k.png") no-repeat center center fixed;
+
       width: 40%;
       margin: 0 auto;
       height: 8vh;
