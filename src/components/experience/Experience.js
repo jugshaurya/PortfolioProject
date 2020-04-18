@@ -29,7 +29,7 @@ const Experience = () => {
               <li>Taking doubt sessions</li>
               <li>Debugging codes</li>
               <li>Helping students in their assignments.</li>
-              <li>Solved 1300+ Doubts</li>
+              <li>Solved 1500+ Doubts</li>
             </ul>
           </div>
         </div>

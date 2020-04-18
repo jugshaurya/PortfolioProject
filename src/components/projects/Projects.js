@@ -7,26 +7,12 @@ import weekdayProjectImage from "../../assets/projectspic/weekday.png";
 import closetGoodiesProjectImage from "../../assets/projectspic/closetGoodies.png";
 import marioProjectImage from "../../assets/projectspic/mario.png";
 import littleProjectImage from "../../assets/projectspic/little.png";
+import covid19ProjectImage from "../../assets/projectspic/covid19.png";
 import otherImage from "../../assets/projectspic/a.jpg";
 
 class Projects extends Component {
   state = {
     projects: [
-      {
-        photo: trelloProjectImage,
-        name: "Trello Clone",
-        code: "https://github.com/jugshaurya/trello-clone",
-        website: "https://clone-trello.now.sh",
-        techused: [
-          "React.js + Redux",
-          "MongoDB + moongose",
-          "Node + Express",
-          "Passport + bcrypt + jwt",
-          "MDN Drag & Drop",
-          "multer"
-        ],
-        started: "Dec 26, 2019"
-      },
       // {
       //   photo: otherImage,
       //   name: "ChitChat(Discord Clone)",
@@ -53,9 +39,23 @@ class Projects extends Component {
           "Node + Express",
           "d3.js(for racecar barchart)",
           "Cheerio(webScraping)",
-          "now.sh + netlify"
+          "now.sh + netlify",
         ],
-        started: "Jan 15, 2020"
+        started: "Jan 15, 2020",
+      },
+      {
+        photo: covid19ProjectImage,
+        name: "Microsoft Covid19 Visualizer",
+        code: "https://github.com/jugshaurya/covid19app",
+        website: "https://covid19shau.now.sh",
+        techused: [
+          "React.js",
+          "Node + Express",
+          "geojson",
+          "mapbox-gl",
+          "node-sass",
+        ],
+        started: "Apr 10, 2020",
       },
       {
         photo: closetGoodiesProjectImage,
@@ -67,9 +67,9 @@ class Projects extends Component {
           "Redux Thunk",
           "Firebase Auth",
           "Firebase Firestore",
-          "Firebase Hosting"
+          "Firebase Hosting",
         ],
-        started: "Oct 23, 2019"
+        started: "Oct 23, 2019",
       },
       {
         photo: littleProjectImage,
@@ -81,9 +81,24 @@ class Projects extends Component {
           "MongoDB",
           "Node + Express",
           "handlebars",
-          "now.sh"
+          "now.sh",
         ],
-        started: "Aug 30, 2019"
+        started: "Aug 30, 2019",
+      },
+      {
+        photo: trelloProjectImage,
+        name: "Trello Clone",
+        code: "https://github.com/jugshaurya/trello-clone",
+        website: "https://clone-trello.now.sh",
+        techused: [
+          "React.js + Redux",
+          "MongoDB + moongose",
+          "Node + Express",
+          "Passport + bcrypt + jwt",
+          "MDN Drag & Drop",
+          "multer",
+        ],
+        started: "Dec 26, 2019",
       },
       {
         photo: marioProjectImage,
@@ -92,9 +107,9 @@ class Projects extends Component {
         website: "https://shamario.netlify.com",
         techused: ["Javascript", "Phaser V3", "Babel + Webpack"],
         started: "Aug 10, 2019",
-        notCompleted: true
-      }
-    ]
+        notCompleted: true,
+      },
+    ],
   };
 
   render() {

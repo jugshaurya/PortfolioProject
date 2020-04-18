@@ -11,7 +11,7 @@ class PersonalInfo extends Component {
     githubLink: "https://github.com/jugshaurya",
     facebookLink: "https://www.facebook.com/jugshaurya",
     twitterLink: "https://twitter.com/jugshaurya",
-    linkedinLink: "https://www.linkedin.com/in/shaurya-singhal-5b6a8a133",
+    linkedinLink: "https://www.linkedin.com/in/jugshaurya",
     about: [
       {
         name: "Shaurya Singhal",

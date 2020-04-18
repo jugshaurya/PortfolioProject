@@ -11,6 +11,7 @@ somethings are written in https://github.com/jugshaurya/profile, have a look.
   - Learn Machine Learning Repo
 
 - [ ] Write more blogs and add section in here!
+  - [] In Progress...
 
 ### Deployment
 
