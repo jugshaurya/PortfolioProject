@@ -8,7 +8,7 @@ import closetGoodiesProjectImage from "../../assets/projectspic/closetGoodies.pn
 import marioProjectImage from "../../assets/projectspic/mario.png";
 import littleProjectImage from "../../assets/projectspic/little.png";
 import covid19ProjectImage from "../../assets/projectspic/covid19.png";
-import otherImage from "../../assets/projectspic/a.jpg";
+// import otherImage from "../../assets/projectspic/a.jpg";
 
 class Projects extends Component {
   state = {

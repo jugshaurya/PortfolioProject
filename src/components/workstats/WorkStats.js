@@ -8,9 +8,9 @@ const WorkStats = () => {
   useEffect(() => {
     async function fetchSvg() {
       const SERVER_URL = "https://productive-weekday-server.jugshaurya.now.sh";
-      const response = await fetch(`${SERVER_URL}/user/jugshaurya`);
-      const result = await response.json();
-      setSvgHtml(JSON.parse(result.svghtml));
+      const response = await fetch(`${SERVER_URL}/user/jugshaurya?requireSvg=true`);
+      const result = await response.text();
+      setSvgHtml(result);
     }
     fetchSvg();
   }, []);
