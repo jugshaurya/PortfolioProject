@@ -9,7 +9,14 @@ const WorkStats = () => {
     async function fetchSvg() {
       const SERVER_URL = "https://productive-weekday-server.jugshaurya.now.sh";
       const response = await fetch(`${SERVER_URL}/user/jugshaurya?requireSvg=true`);
-      const result = await response.text();
+      let result = await response.text();
+      // changing color
+      result = result
+        .replace(/#ebedf0/g, "#222222")
+        .replace(/#9be9a8/g, "#4fffa7")
+        .replace(/#40c463/g, "#3DDC84")
+        .replace(/#30a14e/g, "#008D41")
+        .replace(/#216e39/g, "#00753b");
       setSvgHtml(result);
     }
     fetchSvg();

@@ -34,6 +34,8 @@
       width: 46%;
       margin: 2%;
       transition: all 0.8s;
+      box-shadow: 10px 10px 10px #111;
+
       &:hover {
         transform: translateY(-10px);
       }
@@ -62,9 +64,13 @@
       }
       svg {
         background: #fff;
+        background: #222;
+        border: 1px solid white;
+        box-shadow: 10px 10px 10px #111;
         text {
           fill: darkblue;
           font-weight: 800;
+          fill: white;
         }
       }
     }
