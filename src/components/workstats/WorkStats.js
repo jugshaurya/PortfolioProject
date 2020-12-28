@@ -12,11 +12,14 @@ const WorkStats = () => {
       let result = await response.text();
       // changing color
       result = result
-        .replace(/#ebedf0/g, "#222222")
-        .replace(/#9be9a8/g, "#4fffa7")
-        .replace(/#40c463/g, "#3DDC84")
-        .replace(/#30a14e/g, "#008D41")
-        .replace(/#216e39/g, "#00753b");
+        .replace(/var\(--color-calendar-graph-day-bg\)/g, "#222222")
+        .replace(/var\(--color-calendar-graph-day-L1-bg\)/g, "#4fffa7")
+        .replace(/var\(--color-calendar-graph-day-L2-bg\)/g, "#3DDC84")
+        .replace(/var\(--color-calendar-graph-day-L3-bg\)/g, "#008D41")
+        .replace(/var\(--color-calendar-graph-day-L4-bg\)/g, "#00753b");
+
+      // var(--color-calendar-graph-day-bg)
+
       setSvgHtml(result);
     }
     fetchSvg();
