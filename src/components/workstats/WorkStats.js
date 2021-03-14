@@ -7,7 +7,7 @@ const WorkStats = () => {
 
   useEffect(() => {
     async function fetchSvg() {
-      const SERVER_URL = "https://productive-weekday-server.jugshaurya.now.sh";
+      const SERVER_URL = "https://productive-weekday-server.now.sh";
       const response = await fetch(`${SERVER_URL}/user/jugshaurya?requireSvg=true`);
       let result = await response.text();
       // changing color

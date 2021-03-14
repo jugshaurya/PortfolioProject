@@ -1,3 +1,9 @@
+$color-calendar-graph-day-bg: #222222;
+$color-calendar-graph-day-L1-bg: #4fffa7;
+$color-calendar-graph-day-L2-bg: #3ddc84;
+$color-calendar-graph-day-L3-bg: #008d41;
+$color-calendar-graph-day-L4-bg: #00753b;
+
 .workstats-section {
   padding-bottom: 80px;
 
@@ -71,6 +77,25 @@
           fill: darkblue;
           font-weight: 800;
           fill: white;
+        }
+        rect.ContributionCalendar-day {
+          outline: 1px solid black;
+          shape-rendering: geometricPrecision;
+        }
+        rect.ContributionCalendar-day[data-level="0"] {
+          fill: $color-calendar-graph-day-bg;
+        }
+        rect.ContributionCalendar-day[data-level="1"] {
+          fill: $color-calendar-graph-day-L1-bg;
+        }
+        rect.ContributionCalendar-day[data-level="2"] {
+          fill: $color-calendar-graph-day-L2-bg;
+        }
+        rect.ContributionCalendar-day[data-level="3"] {
+          fill: $color-calendar-graph-day-L3-bg;
+        }
+        rect.ContributionCalendar-day[data-level="4"] {
+          fill: $color-calendar-graph-day-L4-bg;
         }
       }
     }
